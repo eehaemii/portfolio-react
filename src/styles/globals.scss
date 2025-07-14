@@ -1,0 +1,18 @@
+@import "./reset";
+@import "./variables";
+@import "./mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-pretendard);
+  line-height: 1.6;
+  color: #333;
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "period": "2024.10 ~ 2024.11",
+    "companyName": "비티소프트",
+    "partTime": true,
+    "list": [{ "theme": "HTML" }, { "theme": "SCSS" }]
+  },
+  {
+    "period": "2024.02 ~ 2024.05",
+    "companyName": "엘핀",
+    "partTime": true,
+    "list": [{ "theme": "REACT" }, { "theme": "TAILWINDCSS" }]
+  },
+  {
+    "period": "2023.10 ~ 2023.12",
+    "companyName": "펜타웍스",
+    "partTime": true,
+    "list": [{ "theme": "NEXT" }, { "theme": "CSSMODULE" }]
+  },
+  {
+    "period": "2022.03 ~ 2023.09",
+    "companyName": "위펀",
+    "partTime": false,
+    "list": [
+      { "theme": "VUE" },
+      { "theme": "REACT" },
+      { "theme": "JAVASCRIPT" },
+      { "theme": "SCSS" }
+    ]
+  },
+  {
+    "period": "2021.01 ~ 2022.03",
+    "companyName": "스카이앤드",
+    "partTime": false,
+    "list": [
+      { "theme": "REACT" },
+      { "theme": "HTML" },
+      { "theme": "CSS" },
+      { "theme": "JQUERY" }
+    ]
+  },
+  {
+    "period": "2019.01 ~ 2020.05",
+    "companyName": "카이아이컴퍼니",
+    "partTime": false,
+    "list": [
+      { "theme": "HTML" },
+      { "theme": "CSS" },
+      { "theme": "BOOTSTRAP" },
+      { "theme": "JQUERY" }
+    ]
+  },
+  {
+    "period": "2018.01 ~ 2018.12",
+    "companyName": "이노아이티",
+    "partTime": false,
+    "list": [
+      { "theme": "HTML" },
+      { "theme": "CSS" },
+      { "theme": "SCSS" },
+      { "theme": "JQUERY" }
+    ]
+  }
+]

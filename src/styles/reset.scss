@@ -1,0 +1,194 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Remove default textarea resize */
+textarea {
+  resize: vertical;
+}
+
+/* Remove default table size */
+table {
+  border-collapse: collapse;
+  border-size: 0;
+}
+
+/* Remove default fieldset styles */
+fieldset {
+  border: none;
+}
+
+/* Remove default legend styles */
+legend {
+  padding: 0;
+}
+
+/* Remove default outline on focus for better custom focus styles */
+:focus {
+  outline: none;
+}
+
+/* Accessible focus styles - customize as needed */
+:focus-visible {
+  outline: 2px solid #4285f4;
+  outline-offset: 2px;
+}
+
+/* Remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Remove default styles from headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Remove default styles from paragraphs */
+p {
+  margin: 0;
+}
+
+/* Remove default styles from lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default styles from blockquotes */
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default styles from addresses */
+address {
+  font-style: normal;
+}
+
+/* Remove default styles from abbreviations */
+abbr[title] {
+  text-decoration: none;
+}
+
+/* Remove default styles from code elements */
+code,
+kbd,
+samp,
+pre {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+/* Remove default styles from small elements */
+small {
+  font-size: inherit;
+}
+
+/* Remove default styles from sub and sup elements */
+sub,
+sup {
+  font-size: inherit;
+  line-height: inherit;
+  position: static;
+  vertical-align: baseline;
+}
+
+/* Remove default styles from hr elements */
+hr {
+  border: none;
+  height: 1px;
+  background: currentColor;
+}
+
+/* Remove default styles from details and summary */
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
