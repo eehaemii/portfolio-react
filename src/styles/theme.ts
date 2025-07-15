@@ -1,12 +1,6 @@
 import { tagColors } from "./tagColors";
 
 const colors = {
-  // --blue: #498ce8;
-  // --neutral-50: #f7fafc;
-  // --neutral-100: #e2e8f0;
-  // --neutral-200: #cbd5e0;
-  // --shadow: rgba(0, 0, 0, 0.1);
-
   primary: "#2d3862",
   secondary: "#498ce8",
   accent: "#3182ce",

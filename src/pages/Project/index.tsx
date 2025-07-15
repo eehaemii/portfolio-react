@@ -43,7 +43,7 @@ export const Project = () => {
     cardRefs.current = cardRefs.current.slice(0, visibleCount);
     cardRefs.current.forEach((ref, idx) => {
       if (!ref) return;
-      if (cardVisible[idx]) return; // 이미 보인 카드는 무시
+      if (cardVisible[idx]) return;
 
       const observer = new IntersectionObserver(
         ([entry]) => {
@@ -59,7 +59,6 @@ export const Project = () => {
         { threshold: 0.3 }
       );
       observer.observe(ref);
-      // cleanup은 필요 없음(한 번만 관찰)
     });
   }, [visibleCount, cardVisible]);
 

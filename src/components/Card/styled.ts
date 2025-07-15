@@ -20,10 +20,6 @@ export const CardWrap = styled.div<{ $idx: number; $isVisible: boolean }>`
 
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.size.md};
-
-    // &:not(:first-of-type) {
-    //   margin-top: ${theme.size.md};
-    // }
   }
 `;
 
@@ -48,8 +44,6 @@ export const IconBox = styled.span`
   height: 40px;
   min-width: 40px;
   min-height: 40px;
-  max-width: 40px;
-  max-height: 40px;
   border-radius: 6px;
   background-color: #f0f4ff;
   box-sizing: border-box;
@@ -87,8 +81,6 @@ export const Link = styled.a`
   height: 40px;
   min-width: 40px;
   min-height: 40px;
-  max-width: 40px;
-  max-height: 40px;
   border: 1px solid #e2e8f0;
   border-radius: 6px;
   box-sizing: border-box;

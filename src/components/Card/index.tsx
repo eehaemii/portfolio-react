@@ -34,7 +34,7 @@ export default function Card({
         {list?.map((item: { theme: EThemeTag }, index: number) => (
           <Tag
             key={index}
-            themeType={item.theme}
+            $themeType={item.theme}
             message={item.theme.toLowerCase()}
           />
         ))}

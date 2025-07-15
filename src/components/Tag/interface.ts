@@ -2,7 +2,8 @@ import { EThemeTag } from "@/interfaces/common";
 
 export interface IPropsTag {
   message?: string;
-  themeType: EThemeTag;
+  themeType?: EThemeTag;
+  $themeType?: EThemeTag;
 }
 
 export type TThemeInfo = {
