@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../../styles/theme";
 
-export const CardWrap = styled.div`
+export const CardWrap = styled.div<{ $idx: number; $isVisible: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,11 +10,20 @@ export const CardWrap = styled.div`
   background: ${theme.colors.white};
   box-shadow: 0px 1px 3px #dcdcdc;
 
+  opacity: ${({ $isVisible }) => ($isVisible ? 1 : 0)};
+  transform: ${({ $isVisible }) =>
+    $isVisible ? "translateY(0)" : "translateY(40px)"};
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1)
+      ${({ $idx }) => Math.min($idx * 0.12, 0.6)}s,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1)
+      ${({ $idx }) => Math.min($idx * 0.12, 0.6)}s;
+
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.size.md};
-    &:not(:first-of-type) {
-      margin-top: ${theme.size.md};
-    }
+
+    // &:not(:first-of-type) {
+    //   margin-top: ${theme.size.md};
+    // }
   }
 `;
 
@@ -50,18 +59,20 @@ export const Title = styled.h3`
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 2; /* 2줄까지만 보이기 */
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   white-space: normal;
   font-weight: bold;
   font-size: 1.2rem;
+  line-height: 1.5;
 `;
 export const Description = styled.p`
   display: -webkit-box;
+  min-height: 50px;
   margin-top: ${theme.size.md};
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 2; /* 2줄까지만 보이기 */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   white-space: normal;
   font-size: ${theme.size.md};

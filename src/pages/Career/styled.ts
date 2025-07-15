@@ -3,6 +3,11 @@ import { theme } from "@/styles/theme";
 
 export const Section = styled.section`
   padding: ${theme.size.xl};
+
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: ${theme.size.md};
+    padding-bottom: ${theme.size.xl};
+  }
 `;
 
 export const MainTitle = styled.h2`

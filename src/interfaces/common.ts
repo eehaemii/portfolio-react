@@ -16,6 +16,7 @@ export enum EThemeTag {
   SCSS = "SCSS",
   JQUERY = "JQUERY",
   JAVASCRIPT = "JAVASCRIPT",
+  TYPESCRIPT = "TYPESCRIPT",
   REACT = "REACT",
   VUE = "VUE",
   NEXT = "NEXT",

@@ -6,6 +6,7 @@ export const tagColors: Record<EThemeTag, string> = {
   SCSS: "rgba(175, 0, 219, 0.3)",
   JQUERY: "rgba(0, 84, 237, 0.3)",
   JAVASCRIPT: "rgba(247, 224, 24, 0.3)",
+  TYPESCRIPT: "rgba(49, 120, 198, 0.3)",
   REACT: "rgba(11, 216, 255, 0.3)",
   VUE: "rgba(63, 184, 131, 0.3)",
   NEXT: "rgba(0, 87, 255, 0.3)",

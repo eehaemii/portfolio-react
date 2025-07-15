@@ -4,9 +4,17 @@ import { EThemeTag } from "@/interfaces/common";
 
 import Tag from "@/components/Tag";
 
-export default function Card({ icon, title, desc, list, href }: IPropsCard) {
+export default function Card({
+  icon,
+  title,
+  desc,
+  list,
+  href,
+  idx,
+  isVisible,
+}: IPropsCard & { idx: number; isVisible: boolean }) {
   return (
-    <S.CardWrap>
+    <S.CardWrap $idx={idx} $isVisible={isVisible}>
       <>
         <S.CardList>
           <S.ContentBox>

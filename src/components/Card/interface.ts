@@ -10,4 +10,7 @@ export interface IPropsCard {
   desc?: string;
   list?: ITagItem[];
   href?: string;
+
+  idx: number;
+  isVisible: boolean;
 }
