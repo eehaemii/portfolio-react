@@ -1,7 +1,20 @@
 [
   {
     "icon": "📁",
-    "title": "",
-    "desc": ""
+    "title": "공공기관 관리자 사이트",
+    "desc": "공공기관에서 사용하는 관리자 페이지의 웹 퍼블리싱 작업을 진행하며, 웹 표준과 웹 접근성을 준수해 다양한 사용자 환경에서 안정적으로 작동하도록 구현",
+    "href": "https://eehaemii.notion.site/12a87fb977b540778b90295aa440b8a6",
+    "list": [{ "theme": "HTML" }, { "theme": "SCSS" }]
+  },
+  {
+    "icon": "📁",
+    "title": "SK 임직원몰",
+    "desc": "SK 임직원을 위한 이커머스 플랫폼으로, 가데이터를 활용한 개발 환경 개선 및 공통 UI 컴포넌트 설계에 집중",
+    "href": "https://eehaemii.notion.site/SK-18f8d668906081cda7e1f7786408bdf8",
+    "list": [
+      { "theme": "REACT" },
+      { "theme": "TAILWINDCSS" },
+      { "theme": "FIGMA" }
+    ]
   }
 ]

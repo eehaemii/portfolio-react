@@ -4,21 +4,25 @@ import { EThemeTag } from "@/interfaces/common";
 
 import Tag from "@/components/Tag";
 
-export default function Card({ icon, title, desc, list }: IPropsCard) {
+export default function Card({ icon, title, desc, list, href }: IPropsCard) {
   return (
     <S.CardWrap>
-      <S.CardList>
-        <li>
-          <S.IconBox>{icon}</S.IconBox>
-        </li>
-        <li>
-          <S.Title>{title}</S.Title>
-          <S.Description>{desc}</S.Description>
-        </li>
-        <li>링크</li>
-      </S.CardList>
+      <>
+        <S.CardList>
+          <S.ContentBox>
+            <S.IconBox>{icon}</S.IconBox>
+            <S.Title>{title}</S.Title>
+          </S.ContentBox>
 
-      <div>
+          <S.Link href={href} target="_blank" rel="noopener noreferrer">
+            🔗
+          </S.Link>
+        </S.CardList>
+
+        <S.Description>{desc}</S.Description>
+      </>
+
+      <S.TagListBox>
         {list?.map((item: { theme: EThemeTag }, index: number) => (
           <Tag
             key={index}
@@ -26,7 +30,7 @@ export default function Card({ icon, title, desc, list }: IPropsCard) {
             message={item.theme.toLowerCase()}
           />
         ))}
-      </div>
+      </S.TagListBox>
     </S.CardWrap>
   );
 }

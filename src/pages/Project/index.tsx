@@ -25,6 +25,8 @@ export const Project = () => {
               icon={item.icon}
               title={item.title}
               desc={item.desc}
+              href={item.href}
+              list={item.list}
             />
           );
         })}

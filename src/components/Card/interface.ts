@@ -9,4 +9,5 @@ export interface IPropsCard {
   title?: string;
   desc?: string;
   list?: ITagItem[];
+  href?: string;
 }

@@ -14,4 +14,13 @@ export const MainTitle = styled.h2`
   color: ${theme.colors.white};
 `;
 
-export const ProjectWrap = styled.div``;
+export const ProjectWrap = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: ${theme.size.md};
+  margin-top: ${theme.size.md};
+
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    display: block;
+  }
+`;

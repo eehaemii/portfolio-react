@@ -13,4 +13,5 @@ export const tagColors: Record<EThemeTag, string> = {
   CSSMODULE: "rgba(40, 128, 180, 0.3)",
   BOOTSTRAP: "rgba(86, 61, 124, 0.3)",
   STYLEDCOMPONENT: "rgba(210, 206, 206, 0.3)",
+  FIGMA: "rgba(162, 89, 255, 0.3)",
 };

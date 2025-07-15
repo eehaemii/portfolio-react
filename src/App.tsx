@@ -5,7 +5,7 @@ import "./styles/globals.scss";
 
 import { Home } from "@/pages/Home";
 import { Career } from "@/pages/Career";
-// import { Project } from "@/pages/Project";
+import { Project } from "@/pages/Project";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <GlobalStyle />
       <Home />
       <Career />
-      {/* <Project /> */}
+      <Project />
     </ThemeProvider>
   );
 }
